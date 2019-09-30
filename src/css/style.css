@@ -13,15 +13,29 @@ img {
 
 @media (max-width: 1200px) {
   .container {
-    max-width: 760px;
+    max-width: 1140px;
+    width: 90%;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 960px;
     width: 90%;
   }
 }
 
 @media (max-width: 768px) {
   .container {
-    max-width: 580px;
-    width: 95%;
+    max-width: 720px;
+    width: 90%;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 540px;
+    width: 87%;
   }
 }
 
@@ -85,7 +99,7 @@ img {
   margin-top: 9px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .navbar__contacts {
     display: none;
   }
