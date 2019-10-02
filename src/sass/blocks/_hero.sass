@@ -8,25 +8,22 @@
 		flex-basis: 47%
 		padding-right: 80px
 		&__title
-			font:
-				size: 41px	
-				weight: 700
+			font-size: 41px	
+			+bold
 			line-height: 55px
 			margin-bottom: 38px
 		&__subtitle
-			font:
-				size: 20px
-				weight: 700
+			font-size: 20px
+			+bold
 			display: inline-block
-			margin-bottom: 66px
+			margin-bottom: 67px
 	&-list
 		margin: 0
 		padding: 0
-	
 		&__item
 			display: flex
 			align-items: center
-			margin-bottom: 23px
+			margin-bottom: 25px
 		&__image
 			width: 40px
 			height: 40px
@@ -37,11 +34,10 @@
 			border-radius: 50%
 			margin-right: 30px
 		&__text
-			max-width: 250px
+			max-width: 235px
 			font-size: 14px
-			font-weight: 300
 			line-height: 24px
-	
+
 @media (max-width: 1200px)
 	img
 		max-width: 100%
@@ -61,11 +57,12 @@
 		&-list
 			margin-bottom: 35px
 		&-text
+			min-width: 280px
 			&__title
-				font-size: 23px
+				font-size: 24px
 				line-height: normal
-				margin-bottom: 11px
-				padding-top: 10px
+				margin-bottom: 7px
+				padding-top: 8px
 			&__subtitle
 				font-size: 16px
 				margin-bottom: 27px
@@ -76,4 +73,4 @@
 			&__image
 				margin-right: 12px
 			&__item
-				margin-bottom: 16px
+				margin-bottom: 20px
