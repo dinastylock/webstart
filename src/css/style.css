@@ -1,15 +1,15 @@
 @font-face {
   font-family: 'Museo Sans Light';
   src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.eot");
-  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.woff") format("woff"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.ttf") format("truetype");
-  font-weight: normal;
+  src: local("../fonts/MuseoSansCyrl/MuseoSansCyrl-300"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.woff2") format("woff2"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.woff") format("woff"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.ttf") format("truetype");
+  font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Museo Sans Bold';
   src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.eot");
-  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.woff") format("woff"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.ttf") format("truetype");
+  src: local("../fonts/MuseoSansCyrl/MuseoSansCyrl-700"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.woff2") format("woff2"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.woff") format("woff"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -88,7 +88,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   text-align: right;
-  margin-top: -5px;
+  margin-top: -6px;
 }
 
 .navbar__adress {
@@ -100,6 +100,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   font-size: 13px;
+  margin-top: 5px;
 }
 
 .navbar__button {
@@ -165,7 +166,7 @@ body {
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
   line-height: 55px;
-  margin-bottom: 38px;
+  margin-bottom: 40px;
 }
 
 .hero-text__subtitle {
