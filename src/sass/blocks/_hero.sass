@@ -1,5 +1,5 @@
 .hero
-	background-color: #f5f5f5
+	background-color: $secondary
 	padding: 48px 0
 	&-block
 		display: flex
@@ -16,7 +16,7 @@
 			font-size: 20px
 			+bold
 			display: inline-block
-			margin-bottom: 67px
+			margin-bottom: 69px
 	&-list
 		margin: 0
 		padding: 0
@@ -24,6 +24,12 @@
 			display: flex
 			align-items: center
 			margin-bottom: 25px
+			&:first-child
+				margin-bottom: 26px
+			&:nth-child(2)
+			margin-bottom: 22px
+			&:last-child
+				margin-bottom: 0
 		&__image
 			width: 40px
 			height: 40px

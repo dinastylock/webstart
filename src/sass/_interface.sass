@@ -2,14 +2,10 @@
 	box-sizing: border-box
 body
 	+reg
+	color: $text-color
 .container
 	width: 1170px
 	margin: auto
-.button
-	border-radius: 10px
-	background-color: $main-color
-	color: $text-color
-	border: none
 
 @media (max-width: 1200px)
 	.container
@@ -30,4 +26,34 @@ body
 	.button
 		border-radius: 5px
 
-
+.button
+	border-radius: 10px
+	background-color: $main-color
+	color: $text-color
+	cursor: pointer
+	outline: none
+	border: none
+	padding: 19px 30px 17px
+	&:hover
+		background-color: lighten($main-color, 10%)
+.section
+	padding: 62px 0 90px
+	&-title
+		font-size: 24px
+		+bold
+	&-subtitle
+		font-size: 16px
+		+reg
+.input
+	border: 1px solid $border-input
+	padding: 23px 26px
+	font-size: 15px
+	border-radius: 10px
+	+reg
+@media (max-width: 768px)
+	.section
+		padding: 35px 0 50px
+		&-title
+			font-size: 18px
+		&-subtitle
+			font-size: 14px
