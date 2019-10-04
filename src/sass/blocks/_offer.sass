@@ -27,13 +27,23 @@
 	&__input
 		width: 240px
 		margin-bottom: 30px
+		display: inline-block
+		padding-left: 33px
+		&:focus
+			border: 1px solid $main-color
+		&::placeholder
+			color: $placeholder
+			line-height: 24px
 		&:first-child
-			margin-right: 10px			
+			margin-right: 10px
+			padding-left: 26px
 	&__button
 		width: 100%
 		min-height: 70px
 		font-size: 16px
 		+bold
+		display: inline-block
+		padding-top: 16px
 	&__feedback
 		display: flex
 		justify-content: space-between
@@ -79,11 +89,24 @@
 			line-height: normal
 			margin-bottom: 27px
 		&__input
-			width: 99%
-			margin-bottom: 8px
+			width: 100%
+			margin-bottom: 10px
+			padding-left: 22px
+			&:focus
+				border: 1px solid $main-color
+			&::placeholder
+				color: $placeholder
+				line-height: 24px
+			&:first-child
+				padding-left: 22px
+				margin-right: 0
+				margin-bottom: 8px
 		&__button
+			max-width: 100%
 			font-size: 14px
 			line-height: 18px
+			display: inline-block
+			padding: 5px 62px
 		&__feedback
 			flex-direction: column
 			align-items: flex-start
