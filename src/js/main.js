@@ -25,4 +25,22 @@ $(document).ready(function () {
 	close.on('click', function () {
 		modal.removeClass('modal_active');
 	});
+
+	function backToTop() {
+		let top = $('#arrow');
+
+		$(window).on('scroll', () => {
+			if ($(this).scrollTop() >= 100) {
+				top.fadeIn();
+			} else {
+				top.fadeOut();
+			};
+		});
+		top.on('click', (e) => {
+			e.preventDefault();
+			$('html').animate({ scrollTop: 0 }, 1000);
+		});
+	};
+	backToTop();
 });
+

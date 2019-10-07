@@ -568,8 +568,12 @@ body {
 
 .modal-dialog__close {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 1px;
+  right: 1px;
+  border: none;
+  border-radius: 50%;
+  background-color: #ffd200;
+  outline: none;
 }
 
 .modal-dialog__title {
@@ -643,5 +647,44 @@ body {
     padding: 18px 20px;
     margin-top: 5px;
   }
+}
+
+.arrow {
+  display: none;
+}
+
+.arrow-up {
+  color: #333333;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 50px;
+  height: 50px;
+  border-color: transparent;
+  border-radius: 50%;
+  background-color: #ffd200;
+}
+
+.arrow-up::after {
+  content: '';
+  position: absolute;
+  top: 57%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.arrow-up::after {
+  width: 15px;
+  height: 15px;
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+          transform: translate(-50%, -50%) rotate(45deg);
+  border-top: 5px solid #333333;
+  border-left: 5px solid #333333;
+}
+
+.arrow-up:hover, .arrow-up:focus {
+  background-color: #ffdb33;
+  outline: none;
 }
 /*# sourceMappingURL=style.css.map */
