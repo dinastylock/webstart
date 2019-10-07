@@ -593,6 +593,10 @@ body {
   padding-left: 24px;
 }
 
+.modal-dialog__input:focus {
+  border: 1px solid #ffd200;
+}
+
 .modal-dialog__button {
   display: inline-block;
   margin: 15px 0 14px;
