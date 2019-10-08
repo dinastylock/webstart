@@ -740,10 +740,6 @@ body {
   max-width: 100%;
 }
 
-.slider_margin {
-  margin: 0 -11px;
-}
-
 @media (max-width: 768px) {
   .portfolio__title {
     font-size: 20px;
@@ -766,7 +762,7 @@ body {
     margin-top: 47px;
   }
   .slider__img {
-    max-width: 82%;
+    max-width: 88%;
   }
 }
 /*# sourceMappingURL=style.css.map */
