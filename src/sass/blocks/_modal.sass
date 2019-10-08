@@ -26,7 +26,11 @@
 			border: none
 			border-radius: 50%
 			background-color: $main-color
-			outline: none
+			transition: all 0.5s
+			&:hover
+				background-color: lighten($main-color, 10%)
+				outline: none
+				cursor: pointer
 		&__title
 			font-size: 22px
 			line-height: 33px
@@ -51,6 +55,7 @@
 			width: 100%
 			letter-spacing: -0.1px
 			+bold
+			transition: all 0.5s
 		&__text
 			font-size: 15px
 			width: 285px

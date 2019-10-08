@@ -1,28 +1,26 @@
 .arrow
 	display: none
-.arrow-up
-	color: $text-color
-	position: fixed
-	right: 20px
-	bottom: 20px
-	width: 50px
-	height: 50px
-	border-color: transparent
-	border-radius: 50%
-	background-color: $main-color
-	&::after,
-		content: ''
-		position: absolute
-		top: 57%
-		left: 50%
-		transform: translate(-50%, -50%)
-	&::after
-		width: 15px
-		height: 15px
-		transform: translate(-50%, -50%) rotate(45deg)
-		border-top: 5px solid $text-color
-		border-left: 5px solid $text-color
-		
-.arrow-up:hover, .arrow-up:focus
-		background-color: lighten($main-color, 10%)
-		outline: none
+	&-up
+		color: $text-color
+		position: fixed
+		right: 20px
+		bottom: 20px
+		width: 50px
+		height: 50px
+		border-color: transparent
+		border-radius: 50%
+		background-color: $main-color
+		transition: all 0.5s
+		&::after,
+			content: ''
+			position: absolute
+			top: 57%
+			left: 50%
+			width: 15px
+			height: 15px
+			transform: translate(-50%, -50%) rotate(45deg)
+			border-top: 5px solid $text-color
+			border-left: 5px solid $text-color
+		&:hover
+			background-color: lighten($main-color, 10%)
+			outline: none
