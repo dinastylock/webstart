@@ -13,6 +13,7 @@
 // 	modal.classList.remove('modal_active');
 // });
 
+new WOW().init();
 
 $(document).ready(function () {
 	var button = $('#button');
