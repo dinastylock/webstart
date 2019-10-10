@@ -21,8 +21,8 @@
 	transition: 0.4s
 	&:hover
 		box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1)
-		.card__image:before
-			opacity: 1
+	// 	// .card__image:before
+		// 	opacity: 1
 	&__text
 		padding: 35px 0 44px
 	&__title
@@ -32,6 +32,9 @@
 		margin: -9px 0 15px 6px
 	&__image
 		position: relative
+		&:hover
+			&:before
+				opacity: 1
 		img
 			display: block
 		&::before
@@ -92,11 +95,13 @@
 			line-height: normal
 		&__subtitle
 			font-size: 14px
-			margin-top: 10px
+			padding-top: 11px
 			margin-left: -13px
 	.card
 		max-width: 97%
 		margin-bottom: 32px
+		&:last-child
+			margin-bottom: 0
 		&__text
 			padding-bottom: 31px
 		&__title
