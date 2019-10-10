@@ -555,6 +555,7 @@ body {
 .portfolio {
   background: #f5f5f5 url("../img/portfolio/portfolio-pattern.jpg") repeat-y center left;
   background-size: 50%;
+  padding-bottom: 96px;
 }
 
 .portfolio__title {
@@ -612,7 +613,7 @@ body {
 }
 
 .price {
-  padding-top: 95px;
+  padding-top: 90px;
 }
 
 .price__title {
