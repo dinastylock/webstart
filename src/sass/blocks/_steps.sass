@@ -59,8 +59,6 @@
 	.step
 		flex-basis: 100%
 		margin-bottom: 30px
-		// &:last-child
-		// 	margin-bottom: 0
 		&:after
 			display: none
 		&__image
@@ -86,3 +84,31 @@
 				line-height: 45px
 				margin-top: 10px
 				margin-bottom: 19px
+@media (max-width: 576px)
+	.step
+		flex-basis: 100%
+		margin-bottom: 30px
+		&:nth-child(2)
+			.step
+				&__image
+					margin-bottom: 28px
+				&__text
+					width: 128px
+		&:nth-child(3)
+			.step
+				&__image
+					margin-bottom: 28px
+				&__text
+					margin-bottom: -4px
+		&:nth-child(4)
+			.step
+				&__image
+					margin-bottom: 28px
+				&__text
+					margin-bottom: -5px
+		&:nth-child(5)
+			.step
+				&__image
+					margin-bottom: 30px
+				// &__text
+				// 	margin-bottom: -5px

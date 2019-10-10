@@ -616,12 +616,12 @@ body {
 }
 
 .price__title {
+  display: block;
   font-size: 30px;
   line-height: 45px;
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
   max-width: 520px;
-  margin-bottom: 58px;
   margin: auto;
 }
 
@@ -629,7 +629,8 @@ body {
   display: block;
   font-size: 20px;
   line-height: 45px;
-  margin: 39px 0 46px;
+  padding-top: 40px;
+  margin: 0 0 46px 1px;
   text-align: center;
 }
 
@@ -935,6 +936,35 @@ body {
     line-height: 45px;
     margin-top: 10px;
     margin-bottom: 19px;
+  }
+}
+
+@media (max-width: 576px) {
+  .step {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin-bottom: 30px;
+  }
+  .step:nth-child(2) .step__image {
+    margin-bottom: 28px;
+  }
+  .step:nth-child(2) .step__text {
+    width: 128px;
+  }
+  .step:nth-child(3) .step__image {
+    margin-bottom: 28px;
+  }
+  .step:nth-child(3) .step__text {
+    margin-bottom: -4px;
+  }
+  .step:nth-child(4) .step__image {
+    margin-bottom: 28px;
+  }
+  .step:nth-child(4) .step__text {
+    margin-bottom: -5px;
+  }
+  .step:nth-child(5) .step__image {
+    margin-bottom: 30px;
   }
 }
 
