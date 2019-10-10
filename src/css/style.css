@@ -108,6 +108,16 @@ body {
   cursor: pointer;
 }
 
+.slideleft {
+  -webkit-animation: mySlideLeft 1.2s ease forwards;
+          animation: mySlideLeft 1.2s ease forwards;
+}
+
+.slidedown {
+  -webkit-animation: mySlideDown 1s ease forwards;
+          animation: mySlideDown 1s ease forwards;
+}
+
 @media (max-width: 768px) {
   .section {
     padding: 35px 0 50px;
@@ -925,5 +935,41 @@ body {
 .arrow-up:hover {
   background-color: #ffdb33;
   outline: none;
+}
+
+@-webkit-keyframes mySlideLeft {
+  from {
+    margin-left: -900px;
+  }
+  to {
+    margin-left: 0;
+  }
+}
+
+@keyframes mySlideLeft {
+  from {
+    margin-left: -900px;
+  }
+  to {
+    margin-left: 0;
+  }
+}
+
+@-webkit-keyframes mySlideDown {
+  from {
+    margin-top: 500px;
+  }
+  to {
+    margin-top: 0;
+  }
+}
+
+@keyframes mySlideDown {
+  from {
+    margin-top: 500px;
+  }
+  to {
+    margin-top: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */

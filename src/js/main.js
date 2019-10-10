@@ -75,30 +75,30 @@ $(document).ready(function () {
 		slider.trigger('prev.owl.carousel');
 	});
 
+
+	$(function () {
+		$(window).scroll(function () {
+			$('.section-title').each(function () {
+				var imagePos = $(this).offset().top;
+
+				var topOfWindow = $(window).scrollTop();
+				if (imagePos < topOfWindow + 700) {
+					$(this).addClass("slidedown");
+				}
+			});
+		});
+		$(window).scroll(function () {
+			$('.offer-block').each(function () {
+				var imagePos = $(this).offset().top;
+
+				var topOfWindow = $(window).scrollTop();
+				if (imagePos < topOfWindow + 900) {
+					$(this).addClass("slidedown");
+				}
+			});
+		});
+	});
 });
 
 
 
-
-	// $('.slider').slick({
-	// 	slidesToShow: 3,
-	// 	slidesToScroll: 1,
-	// 	prevArrow: $('.arrows__left'),
-	// 	nextArrow: $('.arrows__right'),
-	// 	responsive: [
-	// 		{
-	// 			breakpoint: 1200,
-	// 			settings: {
-	// 				slidesToShow: 2,
-	// 				slidesToScroll: 1,
-	// 			}
-	// 		},
-	// 		{
-	// 			breakpoint: 810,
-	// 			settings: {
-	// 				slidesToShow: 1,
-	// 				slidesToScroll: 1,
-	// 			}
-	// 		},
-	// 	]
-	// });
