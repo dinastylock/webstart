@@ -104,11 +104,6 @@ body {
   font-weight: 300;
 }
 
-.input-group {
-  position: relative;
-  display: inline-block;
-}
-
 .input__title {
   margin-bottom: 32px;
   font-size: 22px;
@@ -1292,6 +1287,41 @@ body {
     line-height: 24px;
     margin-left: -15px;
   }
+}
+
+.footer {
+  position: relative;
+}
+
+.map {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50%;
+}
+
+.contacts {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding-top: 100px;
+  padding-left: 200px;
+}
+
+.contacts__title {
+  font-size: 22px;
+  line-height: 33px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+  max-width: 300px;
+}
+
+.contacts-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .modal {
