@@ -1,21 +1,29 @@
-// var button = document.querySelector('#button');
-// var modal = document.querySelector('#modal')
-// var close = document.querySelector('#close')
-
-// button.addEventListener('click', function () {
-// 	modal.classList.add('modal_active');
-// 	let timerId = setTimeout(function () {
-// 		modal.classList.remove('modal_active');
-// 	}, 5000);
-// });
-
-// close.addEventListener('click', function() {
-// 	modal.classList.remove('modal_active');
-// });
 
 new WOW().init();
 
 $(document).ready(function () {
+	$('#brif-form').validate({
+		errorClass: "invalid",
+		rules: {
+			username: {
+				required: true,
+				minlength: 2
+			},
+			phone: {
+				required: true
+			},
+			email: {
+				required: true,
+				email: true
+			}
+		},
+		messages: {
+			username: "Заполните поле",
+			phone: "Заполните поле",
+			email: "Введите корректный email"
+		}
+	});
+	$('.phone').mask('+7(999) 999-99-99');
 	var button = $('#button');
 	var modal = $('#modal');
 	var close = $('#close');

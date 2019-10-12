@@ -19,6 +19,9 @@ body
 	.container
 		max-width: 720px
 		width: 90%
+	// .section
+	// 	padding-top: 60px
+	// 	padding-bottom: 60px
 @media (max-width: 576px)
 	.container
 		max-width: 540px
@@ -53,6 +56,21 @@ body
 	border-radius: 10px
 	outline: none
 	+reg
+	&__title
+		margin-bottom: 32px
+		font-size: 22px;
+		line-height: 33px;
+		+bold
+		align-items: center
+	&__subtitle
+		display: block
+		margin-bottom: 36px
+		margin-left: -2px
+		font-size: 16px;
+		line-height: 45px;
+	&__description
+		display: block
+
 .arrows
 	&__left, &__right
 		&:hover
@@ -69,3 +87,5 @@ body
 			font-size: 18px
 		&-subtitle
 			font-size: 14px
+.invalid
+	border: 1px solid red
