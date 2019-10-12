@@ -104,6 +104,11 @@ body {
   font-weight: 300;
 }
 
+.input-group {
+  position: relative;
+  display: inline-block;
+}
+
 .input__title {
   margin-bottom: 32px;
   font-size: 22px;
@@ -154,7 +159,21 @@ body {
 }
 
 .invalid {
+  color: red;
   border: 1px solid red;
+  display: inline-block;
+}
+
+#username-error {
+  border: 0;
+}
+
+#phone-error {
+  border: 0;
+}
+
+#email-error {
+  border: 0;
 }
 
 .navbar {
@@ -1033,6 +1052,10 @@ body {
   max-width: 370px;
   margin-bottom: 15px;
   padding-left: 22px;
+}
+
+.brif__input:focus {
+  border: 1px solid #ffd200;
 }
 
 .brif__button {

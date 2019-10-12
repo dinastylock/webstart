@@ -4,6 +4,7 @@ new WOW().init();
 $(document).ready(function () {
 	$('#brif-form').validate({
 		errorClass: "invalid",
+		errorElement: "div",
 		rules: {
 			username: {
 				required: true,
@@ -23,6 +24,41 @@ $(document).ready(function () {
 			email: "Введите корректный email"
 		}
 	});
+	$('#offer-form').validate({
+		errorClass: "invalid",
+		errorElement: "div",
+		rules: {
+			username: {
+				required: true,
+				minlength: 2
+			},
+			phone: {
+				required: true
+			}
+		},
+		messages: {
+			username: "Заполните поле",
+			phone: "Заполните поле"
+		}
+	});
+	$('#modal-form').validate({
+		errorClass: "invalid",
+		errorElement: "div",
+		rules: {
+			username: {
+				required: true,
+				minlength: 2
+			},
+			phone: {
+				required: true
+			}
+		},
+		messages: {
+			username: "Заполните поле",
+			phone: "Заполните поле"
+		}
+	});
+	
 	$('.phone').mask('+7(999) 999-99-99');
 	var button = $('#button');
 	var modal = $('#modal');
