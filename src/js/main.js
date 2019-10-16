@@ -8,7 +8,8 @@ $(document).ready(function () {
 		rules: {
 			username: {
 				required: true,
-				minlength: 2
+				minlength: 2,
+				maxlength: 15
 			},
 			phone: {
 				required: true
@@ -19,9 +20,18 @@ $(document).ready(function () {
 			}
 		},
 		messages: {
-			username: "Заполните поле",
-			phone: "Заполните поле",
-			email: "Введите корректный email"
+			username: {
+				required: "Заполните поле",
+				minlength: jQuery.validator.format("Минимум: {0} символа"),
+				maxlength: jQuery.validator.format("Максимум: {0} символов")
+			},
+			phone: {
+				required: "Заполните поле"
+			},
+			email: {
+				required: "Заполните поле",
+				email: "Введите корректный email"
+			}
 		}
 	});
 	$('#offer-form').validate({
@@ -30,15 +40,44 @@ $(document).ready(function () {
 		rules: {
 			username: {
 				required: true,
-				minlength: 2
+				minlength: 2,
+				maxlength: 15
 			},
 			phone: {
 				required: true
 			}
 		},
 		messages: {
-			username: "Заполните поле",
-			phone: "Заполните поле"
+			username: {
+				required: "Заполните поле",
+				minlength: jQuery.validator.format("Минимум: {0} символа"),
+				maxlength: jQuery.validator.format("Максимум: {0} символов")
+			},
+			phone: {
+				required: "Заполните поле"
+			},
+		},
+		submitHandler: function (form) {
+			$.ajax({
+				type: "POST",
+				url: "mail-ajax.php",
+				data: $('#offer-form').serialize(),
+				success: function (response) {
+					console.log('Прибыли данные: ' + response);
+					$('#offer-form')[0].reset();
+					$('.offer__feedback').text(response);
+					$('.offer__feedback').css ({
+						'font-size': "16px",
+						'color': 'green',
+						'justify-content': 'center',
+						'margin-top': '40px',
+						'margin-bottom': '48px'
+					})
+				},
+				error: function (jqXHR, textStatus, errorThrow) {
+					console.error(jqXHR + " " + textStatus);
+				}
+			})
 		}
 	});
 	$('#modal-form').validate({
@@ -47,19 +86,28 @@ $(document).ready(function () {
 		rules: {
 			username: {
 				required: true,
-				minlength: 2
+				minlength: 2,
+				maxlength: 15
 			},
 			phone: {
 				required: true
 			}
 		},
 		messages: {
-			username: "Заполните поле",
-			phone: "Заполните поле"
+			username: {
+				required: "Заполните поле",
+				minlength: jQuery.validator.format("Минимум: {0} символа"),
+				maxlength: jQuery.validator.format("Максимум: {0} символов")
+			},
+			phone: {
+				required: "Заполните поле"
+			}
 		}
 	});
-	
-	$('.phone').mask('+7(999) 999-99-99');
+	$('#offer-form').on('submit', function (event) {
+		event.preventDefault();
+	});
+	$('.phone').mask('8(999) 999-99-99');
 	var button = $('#button');
 	var modal = $('#modal');
 	var close = $('#close');

@@ -26,20 +26,22 @@
 		display: block
 		max-width: 245px
 		line-height: 20px
-		margin-bottom: 30px
+		margin-bottom: 28px
+	&__form
+		position: relative
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
 	&__input
 		width: 240px
 		margin-bottom: 30px
 		display: inline-block
-		padding-left: 33px
+		position: relative
 		&:focus
 			border: 1px solid $main-color
 		&::placeholder
 			color: $placeholder
 			line-height: 24px
-		&:first-child
-			margin-right: 10px
-			padding-left: 26px
 	&__button
 		width: 100%
 		min-height: 70px
@@ -63,6 +65,8 @@
 		color: $text-color
 		+bold
 		text-decoration: none
+	// &__invalid
+	// 	border: 5px solid red
 
 @media (max-width: 1200px)
 	.offer

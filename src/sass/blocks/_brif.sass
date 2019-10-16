@@ -3,9 +3,13 @@
 	background-position: left center, center right
 	background-size: 50%, contain
 	background-repeat: repeat-y, no-repeat
+	padding-bottom: 95px
 	&-block
 		display: flex
 		padding-top: 14px
+	&-form
+		display: flex
+		flex-direction: column
 	&__interview
 		flex-basis: 50%
 	&__form
@@ -15,8 +19,8 @@
 		margin-left: 7px
 		margin-top: -3px
 	&__input
-		display: inline-block
-		width: 100%
+		// display: inline-block
+		width: 370px
 		max-width: 370px
 		margin-bottom: 15px
 		padding-left: 22px
@@ -70,7 +74,6 @@
 			font-size: 18px
 			letter-spacing: -0.01em
 .form
-
 	&__title
 		margin-bottom: 32px
 		font-size: 22px;
@@ -84,7 +87,10 @@
 		font-size: 16px;
 		line-height: 45px;
 	&__description
-		display: block
+		display: inline-block
+		font-size: 15px
+		margin-top: 2px
+		margin-left: -5px
 
 @media (max-width: 1200px)
 	.brif
@@ -107,12 +113,32 @@
 				font-size: 14px
 				max-width: 300px
 	.form
+		align-items: center
+		justify-content: center
 		&__title
 			font-size: 18px
 			margin-bottom: 15px
 		&__subtitle
 			font-size: 14px
 			margin-bottom: 30px
+		&__description
+			text-align: left
+			padding-left: 45px
+@media (max-width: 1133px)
+	.brif
+		&__input
+			width: 100%
+			max-width: 370px
+		&__button
+			margin: auto
+			margin-bottom: 25px
+		&-form
+			align-items: center
+			justify-content: center
+	.form
+		&__description
+			padding-left: 0
+			
 @media (max-width: 768px)
 	.brif
 		background-image: url(../img/brif/brif-color-bg.jpg), url(../img/brif/brif-bg.jpg)
@@ -126,8 +152,8 @@
 			margin-top: 200px
 @media (max-width: 576px)
 	.brif
-		background-size: 100% 50%, cover
-		padding-top: 12px
+		background-size: 100% 48%, cover
+		padding-top: 10px
 		padding-bottom: 0
 		&__form
 			margin: 0
@@ -139,7 +165,7 @@
 			font-size: 14px;
 			line-height: 18px;
 			+bold
-			margin-bottom: 25px
+			margin-bottom: 23px
 	.interview
 		padding-left: 4px
 		padding-right: 0
@@ -159,6 +185,9 @@
 						margin-top: 3px
 					.interview-list__text
 						max-width: 190px
+				&:nth-child(4)
+					.interview-list__counter
+						margin-top: -2px
 			&__counter
 				margin-right: 8px
 			&__text
@@ -184,4 +213,5 @@
 			width: 135px
 			font-size: 14px
 			line-height: 24px;
-			margin-left: -15px
+			margin-left: -12px
+			margin-bottom: 26px
