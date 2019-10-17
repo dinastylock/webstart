@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,UAAU,CAAV,WAAU;EACR,IAAI;IACF,OAAO,EAAE,CAAC;IACV,SAAS,EAAE,uBAAuB;;EAGpC,EAAE;IACA,OAAO,EAAE,CAAC;IACV,SAAS,EAAE,oBAAoB;;;;AAInC,AAAA,YAAY,CAAC;EACX,cAAc,EAAE,WAAW;CAC5B",
+    "sources": [
+        "../sass/animate/fading_entrances/fadeInRight.scss"
+    ],
+    "names": [],
+    "file": "fadeInRight.css"
+}

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,UAAU,CAAV,QAAU;EACR,IAAI;IACF,OAAO,EAAE,CAAC;IACV,SAAS,EAAE,uBAAuB;;EAGpC,EAAE;IACA,OAAO,EAAE,CAAC;IACV,SAAS,EAAE,oBAAoB;;;;AAInC,AAAA,SAAS,CAAC;EACR,cAAc,EAAE,QAAQ;CACzB",
+    "sources": [
+        "../sass/animate/fading_entrances/fadeInUp.scss"
+    ],
+    "names": [],
+    "file": "fadeInUp.css"
+}

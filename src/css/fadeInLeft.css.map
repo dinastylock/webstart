@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,UAAU,CAAV,UAAU;EACR,IAAI;IACF,OAAO,EAAE,CAAC;IACV,SAAS,EAAE,wBAAwB;;EAGrC,EAAE;IACA,OAAO,EAAE,CAAC;IACV,SAAS,EAAE,oBAAoB;;;;AAInC,AAAA,WAAW,CAAC;EACV,cAAc,EAAE,UAAU;CAC3B",
+    "sources": [
+        "../sass/animate/fading_entrances/fadeInLeft.scss"
+    ],
+    "names": [],
+    "file": "fadeInLeft.css"
+}

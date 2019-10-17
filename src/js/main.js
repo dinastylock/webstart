@@ -65,13 +65,12 @@ $(document).ready(function () {
 				success: function (response) {
 					console.log('Прибыли данные: ' + response);
 					$('#offer-form')[0].reset();
-					$('.offer__feedback').text(response);
-					$('.offer__feedback').css ({
+					$('.offer_feedback').text(response);
+					$('.offer_feedback').css ({
 						'font-size': "16px",
 						'color': 'green',
 						'justify-content': 'center',
-						'margin-top': '40px',
-						'margin-bottom': '48px'
+						'font-weight': '700'
 					})
 				},
 				error: function (jqXHR, textStatus, errorThrow) {
@@ -107,7 +106,7 @@ $(document).ready(function () {
 	$('#offer-form').on('submit', function (event) {
 		event.preventDefault();
 	});
-	$('.phone').mask('8(999) 999-99-99');
+	$('.phone').mask('+7(999) 999-99-99');
 	var button = $('#button');
 	var modal = $('#modal');
 	var close = $('#close');
