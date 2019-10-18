@@ -29,12 +29,11 @@ try {
     
         $mail->Subject = 'Новая заявка';
 				$mail->Body    = "<b>Имя:</b> $userName <br>
-				<b>Телефон:</b> $userPhone <br>
-				<b>Почта:</b> $userEmail";
+				<b>Телефон:</b> $userPhone";
 				
 // Проверяем отравленность сообщения
 if ($mail->send()) {
-    header('Location: thanks.html');
+    echo "Форма успешно отправлена";
 } else {
 echo "Сообщение не было отправлено. Неверно указаны настройки вашей почты";
 }

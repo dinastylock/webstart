@@ -20,9 +20,11 @@
     "gulp": "^4.0.2",
     "gulp-clean-css": "^4.2.0",
     "gulp-fontmin": "^0.7.4",
-    "gulp-jsmin": "^0.1.5"
+    "gulp-jsmin": "^0.1.5",
+    "gulp-tinify": "^1.0.2"
   },
   "dependencies": {
+    "@cedx/gulp-php-minify": "^10.1.0",
     "gulp-htmlmin": "^5.0.1"
   }
 }
